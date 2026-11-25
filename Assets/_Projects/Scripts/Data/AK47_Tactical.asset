@@ -19,10 +19,13 @@ MonoBehaviour:
   range: 1000
   pellets: 1
   spread: 1
-  recoil: 10
   hitMask:
     serializedVersion: 2
-    m_Bits: 344
+    m_Bits: 16
+  recoil: 10
+  kickback: 0.03
+  recoilRecovery: 10
+  aimRecoilMultiplier: 0.5
   magazineSize: 30
   reserveAmmo: 90
   reloadTime: 2
