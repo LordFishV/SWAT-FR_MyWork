@@ -21,6 +21,7 @@ public class Door : MonoBehaviour, IInteractable, IDamageable
     [SerializeField] private float _health = 100f;
     [SerializeField] private GameObject _brokenPrefab;   // optional: broken door or debris
     [SerializeField] private AudioClip _breakSound;
+    [SerializeField] private Transform rotationPoint;
 
     private bool _isOpen = false;
     private bool _isRotating = false;
@@ -32,7 +33,7 @@ public class Door : MonoBehaviour, IInteractable, IDamageable
 
     private void Start() {
         // Store initial rotation as CLOSED state
-        _closedRotation = transform.rotation;
+        _closedRotation = rotationPoint.rotation;
 
         if (startOpened)
             Interact(_interactingObject);
@@ -59,16 +60,16 @@ public class Door : MonoBehaviour, IInteractable, IDamageable
     private void Update() {
         if (!_isRotating) return;
 
-        transform.rotation =
+        rotationPoint.rotation =
         Quaternion.RotateTowards(
-            from: transform.rotation,
+            from: rotationPoint.rotation,
             to: _targetRotation,
             maxDegreesDelta: rotationSpeed * Time.deltaTime
         );
 
         // Stop rotating when finished
-        if (Quaternion.Angle(transform.rotation, _targetRotation) < 0.1f) {
-            transform.rotation = _targetRotation;
+        if (Quaternion.Angle(rotationPoint.rotation, _targetRotation) < 0.1f) {
+            rotationPoint.rotation = _targetRotation;
             _isRotating = false;
         }
     }
@@ -80,10 +81,10 @@ public class Door : MonoBehaviour, IInteractable, IDamageable
             return;
 
         if (_brokenPrefab != null)
-            Instantiate(_brokenPrefab, transform.position, transform.rotation);
+            Instantiate(_brokenPrefab, rotationPoint.position, rotationPoint.rotation);
 
         if (_breakSound != null)
-            AudioSource.PlayClipAtPoint(_breakSound, transform.position);
+            AudioSource.PlayClipAtPoint(_breakSound, rotationPoint.position);
 
         Destroy(gameObject);
     }
