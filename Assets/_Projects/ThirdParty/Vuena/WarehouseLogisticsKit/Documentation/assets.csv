@@ -1,0 +1,188 @@
+name,sm_name,module,pivot,W_m,D_m,H_m,tris,moving_parts,source,note
+wk_barrel_plastic,SM_barrel_plastic,Loads,F,0.58,0.58,0.936,1184,,fk_barrel_plastic,
+wk_barrel_steel,SM_barrel_steel,Loads,F,0.601,0.601,0.88,1240,,fk_barrel_steel,
+wk_barrier_impact_2m,SM_barrier_impact_2m,Safety,G,2.0,0.3,0.765,840,,new,"double-rail forklift impact barrier, 2 m"
+wk_barrier_pedestrian_2m,SM_barrier_pedestrian_2m,Safety,G,2.0,0.12,1.115,708,,new,"yellow pedestrian guard rail, 2 m"
+wk_barrier_pedestrian_gate,SM_barrier_pedestrian_gate,Safety,G,1.2,0.12,1.115,820,gate (hinge z),new,self-closing pedestrian gate; node gate (hinge z)
+wk_barrier_post,SM_barrier_post,Safety,F,0.34,0.34,1.03,368,,fk_barrier_post,
+wk_battery_charger,SM_battery_charger,Handling,M,0.55,0.251,0.998,1104,,new,wall-mounted truck battery charger with lead
+wk_beam_steel_2m,SM_beam_steel_2m,Building,O,2.0,0.15,0.3,204,,fk_beam_steel_2m,
+wk_beam_steel_4m,SM_beam_steel_4m,Building,O,4.0,0.15,0.3,204,,fk_beam_steel_4m,
+wk_bollard,SM_bollard,Safety,F,0.2,0.2,0.982,728,,fk_bollard,
+wk_bollard_heavy,SM_bollard_heavy,Safety,F,0.4,0.4,1.255,1004,,new,concrete-filled steel bollard 0.27 m
+wk_box_closed,SM_box_closed,Loads,F,0.604,0.401,0.401,156,,fk_box_closed,
+wk_box_flat,SM_box_flat,Loads,F,1.0,0.8,0.009,156,,fk_box_flat,
+wk_box_large,SM_box_large,Loads,F,0.804,0.601,0.601,156,,fk_box_large,
+wk_box_open,SM_box_open,Loads,F,0.956,0.756,0.402,120,flap_1 (hinge x); flap_2 (hinge x); flap_3 (hinge y); flap_4 (hinge y),fk_box_open,
+wk_box_small,SM_box_small,Loads,F,0.404,0.301,0.251,156,,fk_box_small,
+wk_bracket_duct_wall,SM_bracket_duct_wall,Building,M,0.08,0.66,0.3,212,,fk_bracket_duct_wall,
+wk_bracket_tray_wall,SM_bracket_tray_wall,Building,M,0.08,0.44,0.12,260,,fk_bracket_tray_wall,
+wk_bulk_bag,SM_bulk_bag,Loads,F,0.976,0.983,1.154,2212,,fk_bulk_bag,
+wk_cabin_steps,SM_cabin_steps,Office,F,0.965,0.62,1.368,448,,new,two-step metal platform for the cabin door
+wk_cable_tray_2m,SM_cable_tray_2m,Building,O,2.0,0.3,0.08,536,,fk_cable_tray_2m,
+wk_cage_trolley,SM_cage_trolley,Handling,F,0.72,0.801,1.8,2012,gate_l (hinge z); gate_r (hinge z),new,"roll cage with two front half gates; nodes gate_l, gate_r"
+wk_cage_trolley_loaded,SM_cage_trolley_loaded,Handling,F,0.72,0.801,1.8,3284,gate_l (hinge z); gate_r (hinge z),new,"roll cage loaded with cartons, gates closed"
+wk_cantilever_rack,SM_cantilever_rack,Racking,F,3.0,1.12,2.5,924,,fk_cantilever_rack,
+wk_carton_flat_stack,SM_carton_flat_stack,Packing,F,1.026,0.814,0.188,360,,new,stack of flat-packed cartons
+wk_column_guard,SM_column_guard,Safety,F,0.542,0.558,1.0,3392,,new,wrap-around column guard for 0.3 m columns
+wk_column_steel_6m,SM_column_steel_6m,Building,F,0.45,0.45,6.4,504,,fk_column_steel_6m,
+wk_column_steel_9m,SM_column_steel_9m,Building,F,0.5,0.5,8.9,380,,new,"HEB 300 hall column, 9.10 m to the cap (0.50 roof beams on top, roof deck at 9.60)"
+wk_conveyor_belt_1m,SM_conveyor_belt_1m,Conveyors,CV,1.0,0.714,0.183,820,,fk_conveyor_belt_1m,
+wk_conveyor_belt_2m,SM_conveyor_belt_2m,Conveyors,CV,2.045,1.028,0.213,1292,,fk_conveyor_belt_2m,
+wk_conveyor_belt_wide_2m,SM_conveyor_belt_wide_2m,Conveyors,CV,2.045,1.328,0.213,1196,,fk_conveyor_belt_wide_2m,
+wk_conveyor_curve_L,SM_conveyor_curve_L,Conveyors,CV,1.357,1.357,0.18,1980,,fk_conveyor_curve_L,
+wk_conveyor_curve_R,SM_conveyor_curve_R,Conveyors,CV,1.357,1.357,0.18,1980,,fk_conveyor_curve_R,
+wk_conveyor_end,SM_conveyor_end,Conveyors,CV,0.501,0.78,0.361,1304,,fk_conveyor_end,
+wk_conveyor_legs,SM_conveyor_legs,Conveyors,F,0.18,0.76,0.66,476,,fk_conveyor_legs,
+wk_conveyor_legs_tall,SM_conveyor_legs_tall,Conveyors,F,0.18,0.76,1.16,476,,fk_conveyor_legs_tall,
+wk_conveyor_roller_1m,SM_conveyor_roller_1m,Conveyors,CV,1.0,0.714,0.18,1196,,fk_conveyor_roller_1m,
+wk_conveyor_roller_2m,SM_conveyor_roller_2m,Conveyors,CV,2.0,0.714,0.18,2084,,fk_conveyor_roller_2m,
+wk_conveyor_roller_curve_L,SM_conveyor_roller_curve_L,Conveyors,CV,1.35,1.35,0.18,1928,,fk_conveyor_roller_curve_L,
+wk_conveyor_splitter,SM_conveyor_splitter,Conveyors,CV,2.045,1.671,0.29,2244,diverter (hinge z),fk_conveyor_splitter,
+wk_conveyor_turntable,SM_conveyor_turntable,Conveyors,CV,1.0,1.0,0.82,1036,table (rot z),fk_conveyor_turntable,
+wk_crate_plastic,SM_crate_plastic,Loads,F,0.612,0.412,0.32,1012,,fk_crate_plastic,
+wk_crate_wood,SM_crate_wood,Loads,F,1.0,0.6,0.616,1056,lid (slide z),fk_crate_wood,
+wk_crate_wood_large,SM_crate_wood_large,Loads,F,1.2,0.8,0.816,1320,lid (slide z),fk_crate_wood_large,
+wk_desk_monitor,SM_desk_monitor,Office,F,0.61,0.4,0.43,4684,,new,monitor + keyboard + mouse set
+wk_dock_bumper,SM_dock_bumper,Dock,M,0.3,0.13,0.5,1456,,new,laminated rubber dock bumper on steel angles
+wk_dock_control_box,SM_dock_control_box,Dock,M,0.3,0.179,0.65,688,,new,door and leveler control box
+wk_dock_door_sectional,SM_dock_door_sectional,Dock,WS,3.7,0.34,6.5,6664,door (slide z),new,insulated sectional door + vertical-lift tracks; same transform as the opening wall; node door (slide z 3.0)
+wk_dock_leveler,SM_dock_leveler,Dock,O,3.0,2.176,0.625,812,lip (hinge x),new,"hydraulic leveler 2.0 x 2.0 in a pit, top at 0; origin = dock edge centre (pit towards -Y); node lip (hinge x)"
+wk_dock_light_arm,SM_dock_light_arm,Dock,M,0.18,1.043,0.27,628,arm (hinge z),new,swing-arm dock lamp; node arm (hinge z)
+wk_dock_shelter,SM_dock_shelter,Dock,M,4.24,0.466,3.6,5388,,new,foam pad dock shelter for a 3.0 x 3.0 opening (outside face)
+wk_dock_signal_light,SM_dock_signal_light,Dock,M,0.2,0.2,0.42,588,,new,red / green dock traffic light
+wk_dock_wheel_chock,SM_dock_wheel_chock,Dock,F,0.24,0.428,0.25,156,,new,steel wheel chock
+wk_door_steel,SM_door_steel,Building,WS,1.2,0.22,2.3,980,door (hinge z),fk_door_steel,
+wk_drum_trolley,SM_drum_trolley,Handling,F,0.634,0.55,1.412,1716,wheel_L (rot x); wheel_R (rot x),fk_drum_trolley,
+wk_duct_2m,SM_duct_2m,Building,O,2.0,0.44,0.34,572,,fk_duct_2m,
+wk_electrical_cabinet,SM_electrical_cabinet,Building,FB,0.813,0.457,2.004,1040,door (hinge z),fk_electrical_cabinet,
+wk_filing_cabinet,SM_filing_cabinet,Office,F,0.47,0.65,1.32,1164,drawer_1 (slide y); drawer_2 (slide y); drawer_3 (slide y); drawer_4 (slide y),new,4-drawer filing cabinet; nodes drawer_1..4 (slide y)
+wk_fire_extinguisher,SM_fire_extinguisher,Safety,F,0.3,0.214,0.592,1156,,fk_fire_extinguisher,
+wk_fire_extinguisher_stand,SM_fire_extinguisher_stand,Safety,F,0.64,0.32,1.15,2156,,new,stand with two extinguishers and sign
+wk_fire_hose_reel,SM_fire_hose_reel,Safety,M,0.604,0.241,0.94,8968,,new,wall hose reel with cabinet sign
+wk_first_aid_box,SM_first_aid_box,Safety,M,0.4,0.15,0.3,272,door (hinge z),fk_first_aid_box,
+wk_floor_concrete_2x2,SM_floor_concrete_2x2,Building,G,2.0,2.0,0.02,12,,fk_floor_concrete_2x2,
+wk_floor_concrete_4x4,SM_floor_concrete_4x4,Building,G,4.0,4.0,0.02,12,,fk_floor_concrete_4x4,
+wk_forklift,SM_forklift,Handling,F,1.04,3.51,2.245,14564,wheel_front_L (rot x); steer_L (rot z); wheel_rear_L (rot x); wheel_front_R (rot x); steer_R (rot z); wheel_rear_R (rot x); steering_wheel (rot z); mast (rot x); mast_inner (slide z); carriage (slide z),fk_forklift,
+wk_hand_truck,SM_hand_truck,Handling,F,0.6,0.53,1.219,1428,wheel_L (rot x); wheel_R (rot x),fk_hand_truck,
+wk_ibc_tank,SM_ibc_tank,Loads,F,1.2,1.1,1.161,2492,,fk_ibc_tank,
+wk_kraft_roll_stand,SM_kraft_roll_stand,Packing,F,0.98,0.6,0.93,716,,new,floor stand with a 750 mm kraft paper roll
+wk_label_applicator,SM_label_applicator,Packing,CV,0.6,0.47,1.3,524,,fk_label_printer,
+wk_label_printer_desk,SM_label_printer_desk,Packing,F,0.2,0.325,0.172,1092,,new,desktop shipping-label printer
+wk_ladder_a_frame,SM_ladder_a_frame,Handling,F,0.497,0.96,1.755,672,,fk_ladder_a_frame,
+wk_light_flood_wall,SM_light_flood_wall,Dock,M,0.424,0.517,0.302,484,,new,LED loading-bay floodlight on a wall bracket
+wk_light_highbay,SM_light_highbay,Building,C,0.33,0.33,0.45,852,,fk_light_highbay,
+wk_light_highbay_led,SM_light_highbay_led,Building,C,0.33,0.33,0.361,1452,,new,round LED high-bay on a hook
+wk_light_linear,SM_light_linear,Building,C,1.2,0.34,0.56,160,,fk_light_linear,
+wk_locker_bank,SM_locker_bank,Office,FB,0.9,0.535,1.8,1944,door_1 (hinge z); door_2 (hinge z); door_3 (hinge z),fk_locker_bank,
+wk_longspan_shelving,SM_longspan_shelving,Racking,F,2.02,0.62,2.4,2648,,new,"hand-pick long-span shelving 2.0 x 0.6 x 2.4, 4 chipboard decks"
+wk_mark_arrow,SM_mark_arrow,Safety,F,1.0,0.4,0.002,24,,fk_mark_arrow,
+wk_mark_crossing_2x4,SM_mark_crossing_2x4,Safety,G,2.0,4.0,0.002,60,,new,"pedestrian zebra crossing 2 x 4, 2 mm"
+wk_mark_dashed_2m,SM_mark_dashed_2m,Safety,G,1.5,0.1,0.002,24,,new,"dashed yellow lane line, 2 mm slab"
+wk_mark_forklift_symbol,SM_mark_forklift_symbol,Safety,O,1.0,1.0,0.0,2,,new,"origin = min corner on the floor, the stencil face lies 2 mm up (no slab under it); forklift floor stencil 1 x 1, 2 mm"
+wk_mark_hazard_2m,SM_mark_hazard_2m,Safety,G,2.0,0.15,0.002,12,,fk_mark_hazard_2m,
+wk_mark_keep_clear_2x2,SM_mark_keep_clear_2x2,Safety,O,2.0,2.0,0.0,2,,new,"origin = min corner on the floor, the stencil face lies 2 mm up (no slab under it); hatched KEEP CLEAR box, 2 mm"
+wk_mark_line_2m,SM_mark_line_2m,Safety,G,2.0,0.1,0.002,12,,fk_mark_line_2m,
+wk_mark_pallet_zone,SM_mark_pallet_zone,Safety,F,1.4,1.0,0.002,96,,fk_mark_pallet_zone,
+wk_mark_pedestrian_symbol,SM_mark_pedestrian_symbol,Safety,O,1.0,1.0,0.0,2,,new,"origin = min corner on the floor, the stencil face lies 2 mm up (no slab under it); pedestrian floor stencil 1 x 1, 2 mm"
+wk_mark_stop,SM_mark_stop,Safety,G,2.0,0.95,0.002,14,,new,"STOP line with stencil, 2 mm"
+wk_mark_walkway_2m,SM_mark_walkway_2m,Safety,G,2.0,1.0,0.002,84,,fk_mark_walkway_2m,
+wk_mezz_column_3m,SM_mezz_column_3m,Mezzanine,F,0.3,0.3,2.722,308,,new,"SHS column with base and cap plate (2.722 tall, the deck beams sit on the cap)"
+wk_mezz_deck_3x3,SM_mezz_deck_3x3,Mezzanine,O,3.0,3.0,0.28,1348,,new,"deck module 3 x 3, top at 3.00; origin = floor point under the min corner"
+wk_mezz_gate,SM_mezz_gate,Mezzanine,O,0.963,0.06,0.992,428,gate (hinge z),new,"self-closing swing gate for a 1.0 m railing gap; node gate (hinge z); origin = hinge-side end of the rail line, base at 0"
+wk_mezz_railing_1m,SM_mezz_railing_1m,Mezzanine,O,1.0,0.044,1.1,188,,new,"as the 3 m railing, 1.0 m (fills the gap next to the gate or the stairs)"
+wk_mezz_railing_3m,SM_mezz_railing_3m,Mezzanine,O,3.0,0.044,1.1,276,,new,"handrail + knee rail + kick plate; rail line on the X axis from 0 to 3, base at 0"
+wk_mezz_stairs_3m,SM_mezz_stairs_3m,Mezzanine,O,0.986,3.52,3.836,2288,,new,"15 risers x 0.20; origin = floor, centre of the foot; climbs +Y, deck edge at y 3.50"
+wk_office_cabin,SM_office_cabin,Office,F,6.256,2.604,2.7,3272,door (hinge z),new,in-warehouse office cabin 6.0 x 2.5 x 2.7; node door (hinge z)
+wk_office_chair,SM_office_chair,Office,F,0.635,0.604,1.02,3672,seat (rot z),new,task chair; node seat (rot z)
+wk_office_desk,SM_office_desk,Office,F,1.4,0.7,0.74,572,,new,steel-frame desk 1.4 x 0.7
+wk_pack_monitor,SM_pack_monitor,Packing,F,0.55,0.2,0.46,640,,new,packing-station monitor on a stand
+wk_packing_bench,SM_packing_bench,Packing,F,2.0,0.8,2.0,1468,,new,"packing bench 2.0 x 0.8 with upper shelf, kraft roll and task light"
+wk_packing_scale,SM_packing_scale,Packing,F,0.4,0.34,0.44,844,,new,parcel scale with display
+wk_pallet_drums_banded,SM_pallet_drums_banded,Loads,F,1.201,1.201,1.025,6792,,new,4 drums banded on a pallet
+wk_pallet_jack,SM_pallet_jack,Handling,F,0.54,1.69,1.226,2496,forks (slide z); wheel_L (rot x); wheel_R (rot x); handle (rot x),fk_pallet_jack,
+wk_pallet_load,SM_pallet_load,Loads,F,1.206,0.806,1.045,2956,,fk_pallet_load,
+wk_pallet_plastic,SM_pallet_plastic,Loads,F,1.2,0.8,0.152,1284,,fk_pallet_plastic,
+wk_pallet_stack_empty,SM_pallet_stack_empty,Loads,F,1.22,0.815,1.156,7040,,new,stack of 8 empty Euro pallets
+wk_pallet_strapped_cartons,SM_pallet_strapped_cartons,Loads,F,1.211,0.81,1.053,2796,,new,cartons with corner boards and PET straps (no film)
+wk_pallet_truck_electric,SM_pallet_truck_electric,Handling,F,0.72,1.908,1.29,4312,tiller (hinge x),new,walkie electric pallet truck; node tiller (hinge x)
+wk_pallet_wood,SM_pallet_wood,Loads,F,1.2,0.8,0.144,880,,fk_pallet_wood,
+wk_pallet_wrapped_crates,SM_pallet_wrapped_crates,Loads,F,1.216,0.816,1.108,10928,,new,"stacked plastic crates, stretch film"
+wk_pallet_wrapped_full,SM_pallet_wrapped_full,Loads,F,1.208,0.808,1.345,2720,,new,"Euro pallet, 4 layers of cartons, stretch film (1.34 m)"
+wk_pallet_wrapped_half,SM_pallet_wrapped_half,Loads,F,1.208,0.808,0.746,1832,,new,"Euro pallet, 2 layers of cartons, stretch film"
+wk_pallet_wrapped_mixed,SM_pallet_wrapped_mixed,Loads,F,1.208,0.808,1.108,2420,,new,"mixed carton sizes, uneven top, stretch film"
+wk_pallet_wrapped_sacks,SM_pallet_wrapped_sacks,Loads,F,1.22,0.82,1.015,10892,,new,"5 layers of woven sacks, stretch film"
+wk_pallet_wrapper,SM_pallet_wrapper,Packing,F,1.7,2.474,2.66,3304,turntable (rot z); film_carriage (slide z),fk_pallet_wrapper,
+wk_parcel_box,SM_parcel_box,Loads,F,0.3,0.201,0.2,68,,fk_item_box,
+wk_parts_bin_wall,SM_parts_bin_wall,Racking,M,1.0,0.204,1.0,1520,,fk_parts_bin_wall,
+wk_picking_cart,SM_picking_cart,Handling,F,1.005,0.56,1.02,5096,,new,two-level picking cart with 4 totes
+wk_platform_trolley,SM_platform_trolley,Handling,F,0.9,0.6,0.969,1016,,fk_platform_trolley,
+wk_rack_back_mesh_2700,SM_rack_back_mesh_2700,Racking,O,2.752,0.02,5.65,672,,new,"anti-collapse back mesh for one bay, 6 m; origin as the bay"
+wk_rack_bay_6m_add,SM_rack_bay_6m_add,Racking,O,2.808,1.14,6.006,4188,,new,add-on bay: right upright + 3 beam levels; origin = the shared (left) upright centre on the floor
+wk_rack_bay_6m_start,SM_rack_bay_6m_start,Racking,O,2.92,1.14,6.006,6828,,new,two uprights + 3 beam levels; origin = left upright centre on the floor; next bay at x + 2.79
+wk_rack_beam_2700,SM_rack_beam_2700,Racking,O,2.696,1.108,0.21,516,,new,"front + back beam pair; origin = centre of the left upright at beam-top level (place at upright x, 0, level)"
+wk_rack_deck_2700,SM_rack_deck_2700,Racking,O,2.682,1.096,0.037,432,,new,three wire-mesh decks for one level; origin as the beams
+wk_rack_end_barrier,SM_rack_end_barrier,Racking,O,0.22,1.36,0.42,840,,new,end-of-row frame guard; origin = centre of the protected frame on the floor (guard stands at x -0.29)
+wk_rack_protector,SM_rack_protector,Safety,F,0.2,0.2,0.4,200,,fk_rack_protector,
+wk_rack_row_spacer,SM_rack_row_spacer,Racking,O,0.09,0.3,2.1,264,,new,back-to-back row spacer pair (0.30 flue); origin = centre of the left frame column on the floor
+wk_rack_upright_6m,SM_rack_upright_6m,Racking,O,0.13,1.14,6.006,2640,,new,"origin = centre of the frame on the floor; frame depth along Y (1.10), upright section 0.09 along X"
+wk_railing_2m,SM_railing_2m,Mezzanine,G,2.0,0.1,1.1,276,,fk_railing_2m,
+wk_reach_truck,SM_reach_truck,Handling,F,1.304,2.884,2.72,12748,steer (rot z); reach (slide y); mast_inner (slide z); carriage (slide z),new,"reach truck; nodes reach (slide y), mast_inner, carriage (slide z), steer"
+wk_roll_container,SM_roll_container,Handling,F,0.744,0.824,1.711,732,,fk_roll_container,
+wk_roof_beam_5m,SM_roof_beam_5m,Building,O,5.0,0.22,0.505,284,,new,"IPE 500 roof beam segment 5 m; origin = start end, centred, top at 0 (hang under the roof deck)"
+wk_roof_panel_4x4,SM_roof_panel_4x4,Building,O,4.0,4.0,0.3,84,,new,insulated roof sandwich panel 4 x 4 + 2 Z purlins; origin = min corner of the panel underside (purlins hang 0.20 below)
+wk_roof_skylight_4x4,SM_roof_skylight_4x4,Building,O,4.0,4.0,0.67,380,,new,roof panel with a 3 x 1.5 polycarbonate rooflight; origin as the roof panel
+wk_sack,SM_sack,Loads,F,0.519,0.38,0.189,980,,fk_item_sack,
+wk_safety_fence_2m,SM_safety_fence_2m,Safety,G,2.0,0.1,2.0,452,,fk_safety_fence_2m,
+wk_scanner_gate,SM_scanner_gate,Packing,CV,0.4,1.06,1.42,568,,fk_scanner_gate,
+wk_scanner_handheld,SM_scanner_handheld,Packing,F,0.1,0.151,0.207,1444,,new,handheld barcode scanner in its cradle
+wk_scissor_lift_table,SM_scissor_lift_table,Handling,F,1.367,0.82,0.968,532,platform (slide z),fk_scissor_lift_table,
+wk_shelving_unit,SM_shelving_unit,Racking,FB,1.2,0.5,2.0,596,,fk_shelving_unit,
+wk_sign_aisle_a,SM_sign_aisle_a,Racking,O,0.1,1.11,0.774,264,,new,aisle sign on a bracket; origin = top of the upright it clamps to (front face)
+wk_sign_aisle_b,SM_sign_aisle_b,Racking,O,0.1,1.11,0.774,264,,new,"as aisle A, printed B"
+wk_sign_aisle_c,SM_sign_aisle_c,Racking,O,0.1,1.11,0.774,264,,new,"as aisle A, printed C"
+wk_sign_aisle_d,SM_sign_aisle_d,Racking,O,0.1,1.11,0.774,264,,new,"as aisle A, printed D"
+wk_sign_authorised,SM_sign_authorised,Safety,M,0.3,0.004,0.4,44,,fk_sign_authorised,
+wk_sign_dock_01,SM_sign_dock_01,Dock,M,0.65,0.004,0.4,44,,new,dock number plate
+wk_sign_dock_02,SM_sign_dock_02,Dock,M,0.65,0.004,0.4,44,,new,dock number plate
+wk_sign_dock_03,SM_sign_dock_03,Dock,M,0.65,0.004,0.4,44,,new,dock number plate
+wk_sign_dock_04,SM_sign_dock_04,Dock,M,0.65,0.004,0.4,44,,new,dock number plate
+wk_sign_exit,SM_sign_exit,Safety,M,0.4,0.004,0.2,44,,fk_sign_exit,
+wk_sign_fire,SM_sign_fire,Safety,M,0.3,0.004,0.4,44,,fk_sign_fire,
+wk_sign_first_aid,SM_sign_first_aid,Safety,M,0.3,0.004,0.4,44,,fk_sign_first_aid,
+wk_sign_forklift,SM_sign_forklift,Safety,M,0.3,0.004,0.4,44,,fk_sign_forklift,
+wk_sign_hivis,SM_sign_hivis,Safety,M,0.3,0.004,0.4,44,,new,sign 0.30 x 0.40
+wk_sign_keep_clear,SM_sign_keep_clear,Safety,M,0.3,0.004,0.4,44,,new,sign 0.30 x 0.40
+wk_sign_loading_bay,SM_sign_loading_bay,Safety,M,0.3,0.004,0.4,44,,new,sign 0.30 x 0.40
+wk_sign_no_pedestrians,SM_sign_no_pedestrians,Safety,M,0.3,0.004,0.4,44,,new,sign 0.30 x 0.40
+wk_sign_no_smoking,SM_sign_no_smoking,Safety,M,0.3,0.004,0.4,44,,fk_sign_no_smoking,
+wk_sign_pedestrians,SM_sign_pedestrians,Safety,M,0.3,0.004,0.4,44,,new,sign 0.30 x 0.40
+wk_sign_ppe,SM_sign_ppe,Safety,M,0.3,0.004,0.4,44,,fk_sign_ppe,
+wk_sign_rack_load,SM_sign_rack_load,Racking,M,0.3,0.004,0.4,44,,new,rack load notice plate
+wk_sign_speed_limit,SM_sign_speed_limit,Safety,M,0.3,0.004,0.4,44,,new,sign 0.30 x 0.40
+wk_spill_kit_bin,SM_spill_kit_bin,Safety,F,0.62,0.61,0.95,692,,new,wheeled spill-kit bin
+wk_spill_pallet,SM_spill_pallet,Loads,F,1.3,0.81,0.3,292,,fk_spill_pallet,
+wk_step_ladder,SM_step_ladder,Handling,F,0.62,1.15,1.618,2128,,fk_step_ladder,
+wk_strapping_cart,SM_strapping_cart,Packing,F,0.73,0.67,1.015,2552,,new,PET strapping coil cart with tool tray
+wk_stretch_film_roll,SM_stretch_film_roll,Packing,F,0.5,0.124,0.124,440,,new,hand stretch-film roll lying on its side
+wk_tape_gun,SM_tape_gun,Packing,F,0.19,0.27,0.068,1192,,new,hand tape dispenser with tape roll
+wk_tool_chest,SM_tool_chest,Office,F,0.753,0.487,1.4,1952,drawer_1 (slide y); drawer_2 (slide y); drawer_3 (slide y); drawer_4 (slide y); drawer_5 (slide y); drawer_6 (slide y); lid (hinge x),fk_tool_chest,
+wk_toolbox,SM_toolbox,Office,F,0.5,0.228,0.254,340,lid (hinge x),fk_toolbox,
+wk_tote,SM_tote,Loads,F,0.41,0.31,0.15,248,,fk_item_tote,
+wk_tote_lidded,SM_tote_lidded,Loads,F,0.6,0.412,0.35,1052,lid_l (hinge x); lid_r (hinge x),new,"attached-lid container 0.60 x 0.40; nodes lid_l, lid_r"
+wk_traffic_barrier_2m,SM_traffic_barrier_2m,Safety,G,2.0,0.3,0.45,520,,fk_traffic_barrier_2m,
+wk_traffic_cone,SM_traffic_cone,Safety,F,0.38,0.38,0.75,472,,fk_traffic_cone,
+wk_wall_block_1m,SM_wall_block_1m,Building,G,1.0,0.15,3.2,12,,fk_wall_block_1m,
+wk_wall_block_2m,SM_wall_block_2m,Building,G,2.0,0.15,3.2,12,,fk_wall_block_2m,
+wk_wall_block_doorway_2m,SM_wall_block_doorway_2m,Building,G,2.0,0.15,3.2,32,,fk_wall_block_doorway_2m,
+wk_wall_block_window_2m,SM_wall_block_window_2m,Building,G,2.0,0.15,3.2,328,,fk_wall_block_window_2m,
+wk_wall_clad_1m,SM_wall_clad_1m,Building,G,1.0,0.15,3.2,12,,fk_wall_clad_1m,
+wk_wall_clad_2m,SM_wall_clad_2m,Building,G,2.0,0.15,3.2,12,,fk_wall_clad_2m,
+wk_wall_clad_window_2m,SM_wall_clad_window_2m,Building,G,2.0,0.15,3.2,328,,fk_wall_clad_window_2m,
+wk_wall_clock,SM_wall_clock,Office,M,0.3,0.045,0.3,952,,new,wall clock 0.3 m
+wk_wall_corner_post,SM_wall_corner_post,Building,G,0.15,0.15,3.2,12,,fk_wall_corner_post,
+wk_wall_dock_opening_4m,SM_wall_dock_opening_4m,Dock,O,4.0,0.162,3.2,368,,new,"block wall 4.0 x 0.15 x 3.2 with a 3.0 x 3.0 dock opening; origin = min corner of the wall body (same grid as the wall modules), edge angles stand 6 mm proud"
+wk_wall_shutter_4m,SM_wall_shutter_4m,Building,O,4.0,0.65,6.4,684,shutter (scale z),fk_wall_shutter_4m,
+wk_wheelie_bin,SM_wheelie_bin,Office,F,0.62,0.84,1.06,1416,wheel_L (rot x); wheel_R (rot x); lid (hinge x),fk_wheelie_bin,
+wk_whiteboard,SM_whiteboard,Office,M,1.2,0.07,0.9,360,,new,shift whiteboard 1.2 x 0.9
+wk_workbench,SM_workbench,Office,F,2.0,0.963,1.04,1464,drawer (slide y); vise_jaw (slide y),fk_workbench,

@@ -1,0 +1,8 @@
+LICENSE - Warehouse & Logistics Kit (Vuena)
+============================================
+You may use these models and textures in any number of your own projects (games, apps, videos, prints), commercial or not, royalty free,
+and you may modify them. No attribution required (appreciated).
+You may NOT resell, sublicense or redistribute the files themselves (original or modified) as a standalone asset, pack, template or in an asset store,
+and you may not use them to train machine-learning models. One licence per person or studio. Provided "as is" without warranty.
+The Poly Haven photo textures inside (see CREDITS.txt) are CC0 1.0 and stay CC0.
+(c) Vuena / Popyca. Made by our own procedural Blender code (AI-assisted code), no AI-generated meshes or textures.
