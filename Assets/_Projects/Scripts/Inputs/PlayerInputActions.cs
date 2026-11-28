@@ -208,6 +208,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Command"",
+                    ""type"": ""Button"",
+                    ""id"": ""477be55d-24f2-492e-bf9f-d440079b288c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -397,6 +406,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a45391e6-ac7f-445c-a0ba-d3cd9f651ea5"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Command"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -418,6 +438,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Gameplay_EquipSecondary = m_Gameplay.FindAction("EquipSecondary", throwIfNotFound: true);
         m_Gameplay_CycleGadget = m_Gameplay.FindAction("CycleGadget", throwIfNotFound: true);
         m_Gameplay_Interact = m_Gameplay.FindAction("Interact", throwIfNotFound: true);
+        m_Gameplay_Command = m_Gameplay.FindAction("Command", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -511,6 +532,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_EquipSecondary;
     private readonly InputAction m_Gameplay_CycleGadget;
     private readonly InputAction m_Gameplay_Interact;
+    private readonly InputAction m_Gameplay_Command;
     /// <summary>
     /// Provides access to input actions defined in input action map "Gameplay".
     /// </summary>
@@ -574,6 +596,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Gameplay/Interact".
         /// </summary>
         public InputAction @Interact => m_Wrapper.m_Gameplay_Interact;
+        /// <summary>
+        /// Provides access to the underlying input action "Gameplay/Command".
+        /// </summary>
+        public InputAction @Command => m_Wrapper.m_Gameplay_Command;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -639,6 +665,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @Command.started += instance.OnCommand;
+            @Command.performed += instance.OnCommand;
+            @Command.canceled += instance.OnCommand;
         }
 
         /// <summary>
@@ -689,6 +718,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @Command.started -= instance.OnCommand;
+            @Command.performed -= instance.OnCommand;
+            @Command.canceled -= instance.OnCommand;
         }
 
         /// <summary>
@@ -820,5 +852,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInteract(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Command" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnCommand(InputAction.CallbackContext context);
     }
 }

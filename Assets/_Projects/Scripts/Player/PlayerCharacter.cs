@@ -115,10 +115,10 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
 
         float heightResponse = (
             _state.Stance switch {
-                Stance.Stand        => _walkHeightResponse,   // Use the defined response for standing
-                Stance.Run      => _runHeightResponse,    // Use the defined response for running
-                Stance.Crouch   => _crouchHeightResponse, // Use the defined response for crouching
-                _ => _walkHeightResponse                  // Default to the standing response for any other stance
+                Stance.Stand        => _walkHeightResponse, // Use the defined response for standing
+                Stance.Run      => _runHeightResponse,      // Use the defined response for running
+                Stance.Crouch   => _crouchHeightResponse,   // Use the defined response for crouching
+                _ => _walkHeightResponse                    // Default to the standing response for any other stance
             }
         );
 
@@ -154,17 +154,17 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
             // Calculate the character's speed based on the current stance
             float speed = _state.Stance switch
             {
-                Stance.Stand => _walkSpeed,      // Use walk speed when standing
-                Stance.Run => _runSpeed,       // Use run speed when running
-                Stance.Crouch => _crouchSpeed,    // Use crouch speed when crouching
-                _ => _walkSpeed                     // Default to walk speed for any other stance
+                Stance.Stand => _walkSpeed,     // Use walk speed when standing
+                Stance.Run => _runSpeed,        // Use run speed when running
+                Stance.Crouch => _crouchSpeed,  // Use crouch speed when crouching
+                _ => _walkSpeed                 // Default to walk speed for any other stance
             };
             // Calculate the speed response based on the current stance
             float response = _state.Stance switch
             {
-                Stance.Stand => _walkResponse,   // Use walk response when standing
-                Stance.Run => _runResponse,    // Use run response when running
-                Stance.Crouch => _crouchResponse, // Use crouch response when crouching
+                Stance.Stand => _walkResponse,      // Use walk response when standing
+                Stance.Run => _runResponse,         // Use run response when running
+                Stance.Crouch => _crouchResponse,   // Use crouch response when crouching
                 _ => _walkResponse                  // Default to walk response for any other stance
             };
 
@@ -201,8 +201,7 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
             currentRotation = Quaternion.LookRotation(forward, _motor.CharacterUp);
     }
 
-    public void UpdateInteract(PlayerCamera playerCamera)
-    {
+    public void UpdateInteract(PlayerCamera playerCamera) {
         RaycastHit hit;
         if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, _interactionDistance) && hit.collider.TryGetComponent(out IInteractable interactObj)) {
             IInteractable target = hit.collider.GetComponentInParent<IInteractable>();

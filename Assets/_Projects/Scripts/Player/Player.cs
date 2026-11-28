@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
             Interact = input.Interact.WasPressedThisFrame(),
             Run = ReadButton(input.Run),
             Crouch = ReadButton(input.Crouch),
+            Command = ReadButton(input.Command),
 
             FirePressed = input.Fire.WasPressedThisFrame(),
             FireHeld = input.Fire.IsPressed(),
@@ -117,43 +118,38 @@ public class Player : MonoBehaviour
 
     private bool _wasReloading;
 
-    // Shows the reload panel when a reload starts and keeps the gadget counts up to date
-    private void UpdateHud(PlayerInput input)
-    {
+    /// <summary>Shows the reload panel when a reload starts and keeps the gadget counts up to date</summary>
+    /// <param name="input">The player input struct</param>
+    private void UpdateHud(PlayerInput input) {
         if (hud == null)
             return;
 
         // White-out from flashbangs
         hud.SetBlindAmount(blindable != null ? blindable.Intensity : 0f);
 
-        if (weapons.Current is Gun gun)
-        {
+        if (weapons.Current is Gun gun) {
             int capacity = gun.Data.magazineSize;
 
-            if (gun.IsReloading && !_wasReloading)
-            {
+            if (gun.IsReloading && !_wasReloading) {
                 hud.ShowReloadUI(gun.AmmoInMag, capacity, gun.Data.ammoType);
             }
-            else if (!gun.IsReloading && _wasReloading)
-            {
-                // Reload finished: show the new count for a moment, then hide
+            else if (!gun.IsReloading && _wasReloading) {
+                // Once reload is finished, show the new count, then hide it
                 hud.UpdateReloadAmmo(gun.AmmoInMag, capacity);
                 hud.HideReloadUIAfterDelay();
             }
 
             _wasReloading = gun.IsReloading;
         }
-        else if (_wasReloading)
-        {
-            // Switched away mid-reload, which cancels it
+        else if (_wasReloading) {
+            // Switched away mid-reload, which hides the HUD and cancels it
             hud.HideReloadUI();
             _wasReloading = false;
         }
 
         // A throw uses up a charge, so refresh the counts and show the bar
         int gadgetIndex = weapons.CurrentGadgetIndex;
-        if (input.FirePressed && gadgetIndex >= 0)
-        {
+        if (input.FirePressed && gadgetIndex >= 0) {
             hud.UpdateGadgetCounts(weapons.Gadgets);
             hud.ShowGadgetSelection(gadgetIndex);
         }

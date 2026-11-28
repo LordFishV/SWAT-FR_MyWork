@@ -94,12 +94,10 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f00f8ef1741b4d4f96d114e9f725a7a, type: 2}
+  - {fileID: 2100000, guid: 2227cc249d0e5e84fb5c3abddea9d5bb, type: 2}
   - {fileID: 2100000, guid: f957a0cecc72a9748ab7db39b6104368, type: 2}
   - {fileID: 2100000, guid: a08bef1a899a2e445ba07f39c28afefc, type: 2}
   m_StaticBatchInfo:
@@ -119,11 +117,9 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &7105668997551272205
 MeshCollider:

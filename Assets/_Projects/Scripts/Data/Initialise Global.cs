@@ -31,8 +31,8 @@ public enum PlayerState {
 }
 
 /// <summary>The current AI state</summary>
-public enum AIState {
-    Idle, Patrol, Chase, Attack, Flee, Dead
+public enum EnemyState {
+    Idle, Attack, Flee, Surrender, Dead
 }
 
 /// <summary>How something was breached. Flags, so a door can allow several methods</summary>
@@ -101,6 +101,8 @@ public struct PlayerInput {
     public ButtonState Run;
     /// <summary>Holds the Crouch type (Hold/Toggle)</summary>
     public ButtonState Crouch;
+    /// <summary>Holds the Command input from the Keyboard</summary>
+    public ButtonState Command;
     /// <summary>Holds the Aim input from the Mouse</summary>
     public bool Aim;
     /// <summary>Holds the Interact input from the keyboard</summary>
